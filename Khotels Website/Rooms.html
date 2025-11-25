@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Rooms.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ====== NAVBAR START ====== -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Replace logo.png with your actual logo path -->
+            <a href="index.html"><img src="Images/Logo.png" alt="KHOTELS Logo"></a>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a href="Rooms.html"><i class="fas fa-bed"></i> Rooms</a>
+            <a href="Restaurant.html"><i class="fas fa-utensils"></i> Restaurant</a>
+            <a href="mice.html"><i class="fas fa-bell-concierge"></i> M.I.C.E</a>
+            <a href="Amenities.html"><i class="fas fa-spa"></i> Amenities</a>
+            <a href="About.html"><i class="fas fa-user"></i> About</a>
+            <a href="Contact.html"><i class="fas fa-address-book"></i> Contact</a>
+            <a href="https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3"
+                class="book-btn">BOOK NOW</a>
+        </div>
+    </nav>
+    <section class="about-section">
+        <div class="about-overlay">
+            <h2>Rooms</h2>
+        </div>
+    </section>
+
+
+    <section class="room-one">
+        <div class="container">
+            <div class="room-grid">
+                <div class="image-section">
+                    <img src="Images/All images/classic_room_studio-compressor.webp"
+                        alt="Classic Room Studio" class="room-image">
+                    <!-- <div class="image-overlay">📍 Aerial view of Entebbe</div> -->
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h1 class="room-title">Classic Room (Studio)</h1>
+
+                    <p class="room-description">
+                        Relax in your cozy, beautifully appointed One Bedroom Studio with a fully upholstered bed
+                        dressed in the finest cotton linens. Get lost in the peaceful and calm environment and relax
+                        while watching premium entertainment options on the TV.
+                    </p>
+
+                    <div class="room-specs">
+                        <div class="spec-item">
+                            <span class="spec-icon">📏</span>
+                            <span class="spec-text">28 sqm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">🛏️</span>
+                            <span class="spec-text">1 Queen</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">👥</span>
+                            <span class="spec-text">2 Adult, 1 child</span>
+                        </div>
+                    </div>
+
+                    <!-- Add this in your HTML inside amenities section -->
+                    <div class="amenities">
+                        <div class="amenities-header" onclick="toggleAmenities(this)">
+                            <h3 class="amenities-title">Room Amenities</h3>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <div class="amenities-content">
+                            <div class="room-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍷</span>
+                                    <span class="spec-text">Mini Bar</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏛️</span>
+                                    <span class="spec-text">Balcony</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📺</span>
+                                    <span class="spec-text">42" TV</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📶</span>
+                                    <span class="spec-text">High-speed Wifi</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍳</span>
+                                    <span class="spec-text">Free Breakfast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booknow-button">
+                        <button class="cta-button" onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="room-one">
+        <div class="container">
+            <div class="room-grid">
+
+
+                <div class="content-section">
+                    <h1 class="room-title">Classic Suite (2 Room)</h1>
+
+                    <p class="room-description">
+                        The Classic Suite 2 Room is a peerless oasis of luxury. Experience complete luxury and relax in
+                        the fully air-conditioned spacious room, spoil yourself with the modern and fresh interiors.
+                        Choose our magnificent for ultimate opulence.
+                    </p>
+
+                    <div class="room-specs">
+                        <div class="spec-item">
+                            <span class="spec-icon">📏</span>
+                            <span class="spec-text">28 sqm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">🛏️</span>
+                            <span class="spec-text">1 Queen</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">👥</span>
+                            <span class="spec-text">2 Adult, 1 child</span>
+                        </div>
+                    </div>
+
+                    <!-- Add this in your HTML inside amenities section -->
+                    <div class="amenities">
+                        <div class="amenities-header" onclick="toggleAmenities(this)">
+                            <h3 class="amenities-title">Room Amenities</h3>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <div class="amenities-content">
+                            <div class="room-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍷</span>
+                                    <span class="spec-text">Mini Bar</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏛️</span>
+                                    <span class="spec-text">Balcony</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📺</span>
+                                    <span class="spec-text">42" TV</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📶</span>
+                                    <span class="spec-text">High-speed Wifi</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍳</span>
+                                    <span class="spec-text">Free Breakfast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booknow-button">
+                        <button class="cta-button" onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="image-section">
+                    <img src="Images/All images/classic_suite_2_room-compressor.webp"
+                        alt="Classic Room Studio" class="room-image">
+                    <!-- <div class="image-overlay">📍 Aerial view of Entebbe</div> -->
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="room-one">
+        <div class="container">
+            <div class="room-grid">
+                <div class="image-section">
+                    <img src="Images/All images/junior_lake_suite_studio-compressor.webp"
+                        alt="Classic Room Studio" class="room-image">
+                    <!-- <div class="image-overlay">📍 Aerial view of Entebbe</div> -->
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+
+                <div class="content-section">
+                    <h1 class="room-title">Junior Lake Suite (Studio)</h1>
+
+                    <p class="room-description">
+                        Offering breathtaking views of Lake Victoria, the Junior Lake Suite at K Hotels, feature modern
+                        interior and guests can also enjoy complimentary high-speed Internet access. These elegant hotel
+                        rooms also provide Multi cuisine restaurant and Roof top lounge for all day dining.
+                    </p>
+
+                    <div class="room-specs">
+                        <div class="spec-item">
+                            <span class="spec-icon">📏</span>
+                            <span class="spec-text">28 sqm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">🛏️</span>
+                            <span class="spec-text">1 Queen</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">👥</span>
+                            <span class="spec-text">2 Adult, 1 child</span>
+                        </div>
+                    </div>
+
+                    <!-- Add this in your HTML inside amenities section -->
+                    <div class="amenities">
+                        <div class="amenities-header" onclick="toggleAmenities(this)">
+                            <h3 class="amenities-title">Room Amenities</h3>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <div class="amenities-content">
+                            <div class="room-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍷</span>
+                                    <span class="spec-text">Mini Bar</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏛️</span>
+                                    <span class="spec-text">Balcony</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📺</span>
+                                    <span class="spec-text">42" TV</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📶</span>
+                                    <span class="spec-text">High-speed Wifi</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍳</span>
+                                    <span class="spec-text">Free Breakfast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booknow-button">
+                        <button class="cta-button" onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">Book
+                            Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="room-one">
+        <div class="container">
+            <div class="room-grid">
+
+
+                <div class="content-section">
+                    <h1 class="room-title">Classic Lake Suite (2 Room)</h1>
+
+                    <p class="room-description">
+                        The Classic Lake Suite (2 Room) at K Hotels is amongst the most luxurious and spacious rooms. It
+                        offers refined luxury with a complement of warm and efficient services. Indulge yourself in this
+                        beautiful, spacious suite with comfortably furnished balconies. This suite includes many premium
+                        features to enhance comfort and convenience during your stay.
+                    </p>
+
+                    <div class="room-specs">
+                        <div class="spec-item">
+                            <span class="spec-icon">📏</span>
+                            <span class="spec-text">28 sqm</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">🛏️</span>
+                            <span class="spec-text">1 Queen</span>
+                        </div>
+                        <div class="spec-item">
+                            <span class="spec-icon">👥</span>
+                            <span class="spec-text">2 Adult, 1 child</span>
+                        </div>
+                    </div>
+                    <div class="amenities">
+                        <div class="amenities-header" onclick="toggleAmenities(this)">
+                            <h3 class="amenities-title">Room Amenities</h3>
+                            <span class="toggle-icon">▼</span>
+                        </div>
+                        <div class="amenities-content">
+                            <div class="room-specs">
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍷</span>
+                                    <span class="spec-text">Mini Bar</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🏛️</span>
+                                    <span class="spec-text">Balcony</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📺</span>
+                                    <span class="spec-text">42" TV</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">📶</span>
+                                    <span class="spec-text">High-speed Wifi</span>
+                                </div>
+                                <div class="spec-item">
+                                    <span class="spec-icon">🍳</span>
+                                    <span class="spec-text">Free Breakfast</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="booknow-button">
+                        <button class="cta-button" onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">Book
+                            Now</button>
+                    </div>
+                </div>
+
+                <div class="image-section">
+                    <img src="Images/All images/junior_lake_suite_studio-compressor.webp"
+                        alt="Classic Room Studio" class="room-image">
+                    <!-- <div class="image-overlay">📍 Aerial view of Entebbe</div> -->
+                    <div class="rating">
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+        <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <img src="Images/Logo.png" alt="" class="logo-footer">
+                <p>Experience luxury, comfort, and hospitality redefined. K Hotels offers elegant spaces, world-class
+                    amenities, and exceptional service to make every stay memorable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Rooms.html">Rooms</a></li>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="mice.html">M.I.C.E</a></li>
+                    <li><a href="Amenities.html">Amenities</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa fa-map-marker"></i>Plot 32 Hill Rd, Entebbe, Uganda</li>
+                    <li><i class="fa fa-phone"></i>T +256 777 846 000</li>
+                    <li><i class="fa fa-envelope"></i>Info@khotels.ug</li>
+                    <li><i class="fa fa-envelope"></i>fo.ebb@khotels.ug</li>
+
+                </ul>
+                <div class="footer-social-modern">
+                    <a href="https://www.facebook.com/khotelsug" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/khotelsug/" class="ig"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/khotelsug" class="tw"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@khotelsug" class="yt"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/khotelsug/" class="li"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 K HOTELS. All Rights Reserved. </p>
+        </div>
+    </footer>
+    <script src="Rooms.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

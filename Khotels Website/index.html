@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Lato:wght@400;700&family=Poppins:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- ====== NAVBAR START ====== -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Replace logo.png with your actual logo path -->
+            <a href="#"><img src="Images/Logo.png" alt="KHOTELS Logo"></a>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a href="Rooms.html"><i class="fas fa-bed"></i> Rooms</a>
+            <a href="Restaurant.html"><i class="fas fa-utensils"></i> Restaurant</a>
+            <a href="mice.html"><i class="fas fa-bell-concierge"></i> M.I.C.E</a>
+            <a href="Amenities.html"><i class="fas fa-spa"></i> Amenities</a>
+            <a href="About.html"><i class="fas fa-user"></i> About</a>
+            <a href="Contact.html"><i class="fas fa-address-book"></i> Contact</a>
+            <a href="https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3"
+                class="book-btn">BOOK NOW</a>
+        </div>
+    </nav>
+    <!-- ====== NAVBAR END ====== -->
+
+
+    <!-- ===== HERO SECTION ===== -->
+    <section class="hero">
+        <!-- Background Carousel Images -->
+        <img src="Images/All images/junior_lake_suite_studio-compressor.webp" class="active" alt="Hotel View 1">
+        <img src="Images/Khotels images/conatcthero.jpg" alt="Hotel View 2">
+        <img src="Images/All images/258fec1213d1e8a0aa4252e719fd59b51664c51667bd8cf0edc15b20f232ec68.webp"
+            alt="Hotel View 3">
+
+        <!-- Content -->
+        <div class="hero-content">
+            <div class="hero-section">
+                <h1>EXPLORE YOUR PERFECT PLACE TO STAY</h1>
+                <p>Enjoy refined hospitality at a top hotel in Entebbe, Uganda, featuring Tides Restaurant, Tides Spa,
+                    outdoor swimming pool, and affordable luxury with business-friendly services.</p>
+                <div class="hero-button">
+                    <div class="offer-box">
+                        <i class="fas fa-check"></i>
+                        <span>Book directly on our website and get 10% OFF your stay</span>
+                    </div>
+
+                    <a href="https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3"
+                        class="book-btn">
+                        BOOK NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Dots -->
+        <div class="carousel-dots">
+            <span class="active" data-index="0"></span>
+            <span data-index="1"></span>
+            <span data-index="2"></span>
+        </div>
+    </section>
+
+
+    <section class="why-love-section">
+        <div class="why-love-title">
+            <img src="Images/left (1).png" alt="left decoration" class="decor-left" />
+            <h2>K Hotels Story</h2>
+            <img src="Images/right (1).png" alt="right decoration" class="decor-right" />
+        </div>
+    </section>
+
+
+
+    <section class="khotels-showcase">
+        <div class="main-container">
+            <div class="showcase-layout">
+                <div class="gallery-wrapper">
+                    <div class="gallery-item">
+                        <img src="Images/All images/junior_lake_suite_studio-compressor.webp" alt="Hotel Lobby">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/All images/258fec1213d1e8a0aa4252e719fd59b51664c51667bd8cf0edc15b20f232ec68.webp"
+                            alt="Hotel Gym">
+                    </div>
+                    <div class="gallery-item">
+                        <img src="Images/All images/b22bd58ca7932fcf586bbfd682e5360aed0dfd8ae7b9b63c7ba5ff327bdd477b.webp"
+                            alt="Hotel Spa">
+                    </div>
+                </div>
+
+                <div class="description-block">
+                    <p>At K HOTELS, every detail is crafted to exceed your expectations — from our stylish boutique
+                        interiors to the warm, attentive service that makes every guest feel at home.</p>
+
+                    <p>Whether you're attending a business event in our modern conference hotel in Entebbe or enjoying a
+                        relaxing evening with massage and beauty treatments at Tides Spa, you'll find the perfect
+                        environment to unwind, work, or celebrate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <div class="container">
+        <!-- Desktop Image (hidden on mobile) -->
+        <img src="Images/All images/lakeview image.jpg" alt="K Hotels Room - Desktop View" class="hotel-image-desktop">
+
+        <!-- Mobile Image (hidden on desktop) -->
+        <img src="Images/All images/junior_lake_suite_studio-compressor.webp" alt="K Hotels Room - Mobile View"
+            class="hotel-image-mobile">
+
+        <div class="content-section">
+            <div class="content-wrapper">
+                <h1 class="lake-font">Wake Up to Lake Victoria</h1>
+                <p class="description">
+                    Step into elevated comfort at K Hotels. With stylish rooms, private balconies
+                    and sweeping views of Lake Victoria, we bring you the perfect blend of
+                    relaxation and sophistication in Entebbe.
+                </p>
+                <button class="book-now"
+                    onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">BOOK
+                    NOW</button>
+
+            </div>
+        </div>
+    </div>
+    <section class="why-love-section">
+        <div class="why-love-title">
+            <img src="Images/left (1).png" alt="left decoration" class="decor-left" />
+            <h2>Why Guests Love K Hotels</h2>
+            <img src="Images/right (1).png" alt="right decoration" class="decor-right" />
+        </div>
+    </section>
+    <section class="features-section">
+        <div class="features-carousel">
+
+            <!-- Card 1 -->
+            <div class="feature-card">
+                <div class="feature-img">
+                    <img src="Images/All images/junior_lake_suite_studio-compressor.webp" alt="Top-Rated Hotel">
+                    <span class="feature-icon">★</span>
+                </div>
+                <div class="feature-content">
+                    <h3>Top-Rated Hotel in Uganda</h3>
+                    <ul>
+                        <li class="gap">Top-rated on Google and TripAdvisor for comfort and elegance.</li>
+                        <li class="gap">Loved by travelers for luxury, service, and unforgettable stays.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="feature-card highlight">
+                <div class="feature-img">
+                    <img src="Images/All images/male-security-guard-working-surveillance-room_392895-207243.webp"
+                        alt="Security">
+                    <span class="feature-icon">🛡️</span>
+                </div>
+                <div class="feature-content">
+                    <h3>24/7 Professional Security</h3>
+                    <p>Your safety is our priority. Our trained security team ensures a secure and peaceful environment
+                        around the clock.</p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="feature-card">
+                <div class="feature-img">
+                    <img src="Images/k hotel 1.jpg" alt="Prime Location">
+                    <span class="feature-icon">📍</span>
+                </div>
+                <div class="feature-content">
+                    <h3>Prime Location</h3>
+                    <ul>
+                        <li class="gap">Just 5 minutes’ walk from <span class="highlight-text">Victoria Mall</span></li>
+                        <li class="gap">7 minutes’ walk from <span class="highlight-text">Imperial Shopping Mall</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="why-love-section">
+        <div class="why-love-title">
+            <img src="Images/left (1).png" alt="left decoration" class="decor-left" />
+            <h2>Visit Our Rooms</h2>
+            <img src="Images/right (1).png" alt="right decoration" class="decor-right" />
+        </div>
+    </section>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="Images/All images/ROOM4.webp" alt="">
+                    <div class="front-footer">Classic Room</div>
+                </div>
+                <div class="card-back">
+                    <div>
+                        <h3>Classic Room</h3>
+                        <p class="gap">Relax in your cozy, beautifully appointed One Bedroom Studio with a fully
+                            upholstered bed
+                            dressed in the finest cotton linens. Get lost in the peaceful and calm environment and relax
+                            while watching premium entertainment options on the TV.</p>
+                        <div class="features">
+                            <div class="feature">🏠 28 sqm</div>
+                            <div class="feature">👨‍👩‍👧 2 Adult, 1 Child</div>
+                            <div class="feature">👑 Queen</div>
+                            <div class="feature">📺 42" TV</div>
+                            <div class="feature">🍳 Breakfast</div>
+                            <div class="feature">📶 WiFi</div>
+                        </div>
+                    </div>
+                    <button class="book-btn"
+                        onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">BOOK
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="Images/All images/classic_suite_2_room-compressor.webp" alt="">
+                    <div class="front-footer">Classic Suite</div>
+                </div>
+                <div class="card-back">
+                    <div>
+                        <h3>Classic Suite</h3>
+                        <p class="gap">The Classic Suite 2 Room is a peerless oasis of luxury. Experience complete
+                            luxury and relax
+                            in the fully air-conditioned spacious room, spoil yourself with the modern and fresh
+                            interiors. Choose our magnificent for ultimate opulence.</p>
+                        <div class="features">
+                            <div class="feature">🏠 28 sqm</div>
+                            <div class="feature">👨‍👩‍👧 2 Adult, 1 Child</div>
+                            <div class="feature">👑 Queen</div>
+                            <div class="feature">🍳 Breakfast</div>
+                            <div class="feature">📶 WiFi</div>
+                        </div>
+                    </div>
+                    <button class="book-btn"
+                        onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">BOOK
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="Images/All images/junior_lake_suite_studio-compressor.webp" alt="">
+                    <div class="front-footer">Junior Lake Suite</div>
+                </div>
+                <div class="card-back">
+                    <div>
+                        <h3>Junior Lake Suite</h3>
+                        <p class="gap">Offering breathtaking views of Lake Victoria, the Junior Lake Suite at K Hotels,
+                            feature
+                            modern interior and guests can also enjoy complimentary high-speed Internet access. These
+                            elegant hotel rooms also provide Multi cuisine restaurant and Roof top lounge for all day
+                            dining.</p>
+                        <div class="features">
+                            <div class="feature">🏠 28 sqm</div>
+                            <div class="feature">👨‍👩‍👧 2 Adult, 1 Child</div>
+                            <div class="feature">👑 Queen</div>
+                            <div class="feature">🍳 Breakfast</div>
+                            <div class="feature">📶 WiFi</div>
+                        </div>
+                    </div>
+                    <button class="book-btn"
+                        onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">BOOK
+                        NOW</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="why-love-section">
+        <div class="why-love-title">
+            <img src="Images/left (1).png" alt="left decoration" class="decor-left" />
+            <h2>Amenities</h2>
+            <img src="Images/right (1).png" alt="right decoration" class="decor-right" />
+        </div>
+    </section>
+    <section class="amenities">
+        <div class="amenities-container">
+            <div class="amenities-grid">
+                <div class="amenity-item">
+                    <div class="amenity-icon-wrapper">
+                        <svg class="amenity-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <circle cx="24" cy="32" r="10" />
+                            <circle cx="24" cy="32" r="3" fill="currentColor" />
+                            <path d="M40 28 h12 a4 4 0 0 1 0 8 h-12 z" />
+                            <path d="M10 46 h44" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span class="amenity-name">Break fast</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon-wrapper">
+                        <svg class="amenity-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 40 c4-4 8-4 12 0 s8 4 12 0 s8-4 12 0" />
+                            <path d="M16 48 c4-4 8-4 12 0 s8 4 12 0 s8-4 12 0" />
+                            <line x1="20" y1="16" x2="20" y2="36" />
+                            <line x1="36" y1="16" x2="36" y2="36" />
+                        </svg>
+                    </div>
+                    <span class="amenity-name">Swimming pool</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon-wrapper">
+                        <svg class="amenity-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <rect x="8" y="28" width="6" height="8" />
+                            <rect x="50" y="28" width="6" height="8" />
+                            <rect x="22" y="30" width="20" height="4" />
+                            <line x1="14" y1="32" x2="22" y2="32" />
+                            <line x1="42" y1="32" x2="50" y2="32" />
+                        </svg>
+                    </div>
+                    <span class="amenity-name">Health club</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon-wrapper">
+                        <svg class="amenity-icon" viewBox="0 0 64 64" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M16 12 h32 l-16 20 z" />
+                            <line x1="32" y1="32" x2="32" y2="52" />
+                            <line x1="24" y1="52" x2="40" y2="52" />
+                        </svg>
+
+                    </div>
+                    <span class="amenity-name">Bar</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon-wrapper">
+                        <svg class="amenity-icon" viewBox="0 0 64 64">
+                            <path d="M32 16 Q26 20, 26 26 Q26 32, 32 36 Q38 32, 38 26 Q38 20, 32 16 Z"
+                                stroke-linejoin="round" />
+                            <path d="M22 28 Q18 30, 18 34 Q18 38, 22 40" stroke-linejoin="round" />
+                            <path d="M42 28 Q46 30, 46 34 Q46 38, 42 40" stroke-linejoin="round" />
+                            <line x1="32" y1="36" x2="32" y2="48" stroke-linecap="round" />
+                            <line x1="26" y1="48" x2="38" y2="48" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span class="amenity-name">Spa</span>
+                </div>
+                <div class="amenity-item">
+                    <div class="amenity-icon-wrapper">
+                        <svg class="amenity-icon" viewBox="0 0 64 64">
+                            <path d="M32 20 L28 30 L32 38 L36 30 Z" stroke-linejoin="round" />
+                            <path d="M32 20 L36 28 L44 26 L38 32 L40 40 L32 36 L24 40 L26 32 L20 26 L28 28 Z"
+                                stroke-linejoin="round" />
+                            <line x1="32" y1="38" x2="32" y2="46" stroke-linecap="round" />
+                        </svg>
+                    </div>
+                    <span class="amenity-name">Salon</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-love-section">
+        <div class="why-love-title">
+            <img src="Images/left (1).png" alt="left decoration" class="decor-left" />
+            <h2>Experiencing K Hotels</h2>
+            <img src="Images/right (1).png" alt="right decoration" class="decor-right" />
+        </div>
+    </section>
+    <section class="experiencing-kHotels">
+        <div class="khotel-wrapper">
+            <div class="khotel-info">
+                <h1 class="khotel-title">Experiencing K Hotels</h1>
+                <p class="khotel-description">
+                    Revel in K Hotel's luxuriously designed conference rooms, ideal for hosting
+                    prestigious events. Our refined spaces combine elegance with functionality,
+                    creating the perfect atmosphere for your most important gatherings.
+                </p>
+                <ul class="khotel-features">
+                    <li class="khotel-feature-item">
+                        <span class="khotel-checkmark"></span>
+                        State-of-the-art audio-visual equipment
+                    </li>
+                    <li class="khotel-feature-item">
+                        <span class="khotel-checkmark"></span>
+                        Customizable seating arrangements
+                    </li>
+                    <li class="khotel-feature-item">
+                        <span class="khotel-checkmark"></span>
+                        Dedicated event planning assistance
+                    </li>
+                    <li class="khotel-feature-item">
+                        <span class="khotel-checkmark"></span>
+                        Premium catering services
+                    </li>
+                    <li class="khotel-feature-item">
+                        <span class="khotel-checkmark"></span>
+                        High-speed wireless connectivity
+                    </li>
+                </ul>
+                <button class="khotel-booking-btn"
+                    onclick="window.open('https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3', '_blank')">Book
+                    Now</button>
+            </div>
+            <div class="khotel-gallery">
+                <div class="khotel-carousel">
+                    <button class="khotel-carousel-arrow khotel-arrow-prev">‹</button>
+                    <button class="khotel-carousel-arrow khotel-arrow-next">›</button>
+
+                    <div class="khotel-slide active-slide">
+                        <img src="Images/All images/rooftop - Copy.webp" alt="Rooftop dining area">
+                    </div>
+                    <div class="khotel-slide">
+                        <img src="Images/All images/gym.webp" alt="Conference room">
+                    </div>
+                    <div class="khotel-slide">
+                        <img src="Images/Khotels images/meeting.webp" alt="Event setup">
+                    </div>
+                    <div class="khotel-slide">
+                        <img src="Images/All images/test7.webp" alt="Elegant venue">
+                    </div>
+                    <div class="khotel-slide">
+                        <img src="Images/All images/massage.webp" alt="Premium space">
+                    </div>
+                    <div class="khotel-nav-dots">
+                        <span class="khotel-dot dot-active" data-slide="0"></span>
+                        <span class="khotel-dot" data-slide="1"></span>
+                        <span class="khotel-dot" data-slide="2"></span>
+                        <span class="khotel-dot" data-slide="3"></span>
+                        <span class="khotel-dot" data-slide="4"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="why-love-section">
+        <div class="why-love-title">
+            <img src="Images/left (1).png" alt="left decoration" class="decor-left" />
+            <h2>Images</h2>
+            <img src="Images/right (1).png" alt="right decoration" class="decor-right" />
+        </div>
+    </section>
+    <div class="carousel-container">
+        <button class="carousel-btn btn-left">&#8592;</button>
+        <div class="carousel-track" id="carousel">
+            <div class="carousel-item"><img
+                    src="Images/All images/258fec1213d1e8a0aa4252e719fd59b51664c51667bd8cf0edc15b20f232ec68.webp"
+                    alt="Image 1"></div>
+            <div class="carousel-item"><img
+                    src="Images/All images/973d2939203f25233111a5605a1224f1f108bdb74aaf444150d684d4afc17a12.webp"
+                    alt="Image 2"></div>
+            <div class="carousel-item"><img src="Images/All images/dinning.webp" alt="Image 3"></div>
+            <div class="carousel-item"><img src="Images/All images/steam.webp" alt="Image 4"></div>
+            <div class="carousel-item"><img src="Images/All images/EQUITOR HALL 1 K Hotels - Entebbe - Uganda.webp"
+                    alt="Image 5"></div>
+            <div class="carousel-item"><img
+                    src="Images/Food images/1e230d0ac6b7ce0f26fc16849de55866f186e20b003f71f71215e83dbd7b7765.webp"
+                    alt="Image 5"></div>
+            <div class="carousel-item"><img src="Images/Food images/CHICKEN_IN_SZECHUAN_SAUCE.webp" alt="Image 5"></div>
+            <div class="carousel-item"><img
+                    src="Images/Classic room Images/Classic Lake Suite  10-K hotels-Entebbe-Uganda.webp" alt="Image 5">
+            </div>
+            <div class="carousel-item"><img src="Images/Rooftop images/Rooftop-K Hotels Entebbe-Uganda 7.webp"
+                    alt="Image 5"></div>
+            <div class="carousel-item"><img src="Images/Rooftop images/Rooftop-K Hotels Entebbe-Uganda 12.webp"
+                    alt="Image 5"></div>
+        </div>
+        <button class="carousel-btn btn-right">&#8594;</button>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <img src="Images/Logo.png" alt="" class="logo-footer">
+                <p>Experience luxury, comfort, and hospitality redefined. K Hotels offers elegant spaces, world-class
+                    amenities, and exceptional service to make every stay memorable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Rooms.html">Rooms</a></li>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="mice.html">M.I.C.E</a></li>
+                    <li><a href="Amenities.html">Amenities</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa fa-map-marker"></i>Plot 32 Hill Rd, Entebbe, Uganda</li>
+                    <li><i class="fa fa-phone"></i>T +256 777 846 000</li>
+                    <li><i class="fa fa-envelope"></i>Info@khotels.ug</li>
+                    <li><i class="fa fa-envelope"></i>fo.ebb@khotels.ug</li>
+
+                </ul>
+                <div class="footer-social-modern">
+                    <a href="https://www.facebook.com/khotelsug" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/khotelsug/" class="ig"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/khotelsug" class="tw"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@khotelsug" class="yt"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/khotelsug/" class="li"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 K HOTELS. All Rights Reserved. </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Contact.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- ====== NAVBAR START ====== -->
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Replace logo.png with your actual logo path -->
+            <a href="index.html"><img src="Images/Logo.png" alt="KHOTELS Logo"></a>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a href="Rooms.html"><i class="fas fa-bed"></i> Rooms</a>
+            <a href="Restaurant.html"><i class="fas fa-utensils"></i> Restaurant</a>
+            <a href="mice.html"><i class="fas fa-bell-concierge"></i> M.I.C.E</a>
+            <a href="Amenities.html"><i class="fas fa-spa"></i> Amenities</a>
+            <a href="About.html"><i class="fas fa-user"></i> About</a>
+            <a href="Contact.html"><i class="fas fa-address-book"></i> Contact</a>
+            <a href="https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3"
+                class="book-btn">BOOK NOW</a>
+        </div>
+    </nav>
+    <section class="about-section">
+        <div class="about-overlay">
+            <h2>Contact</h2>
+        </div>
+
+    </section>
+
+
+
+    <div class="container">
+        <!-- Section 1: Get in Touch -->
+        <section class="touch-section">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="card-icon">📞</div>
+                    <div class="card-label">Phone</div>
+                    <div class="card-value">
+                        <a href="tel:+256777824000" class="card-link">+256 777 824 000</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">✉️</div>
+                    <div class="card-label">Email</div>
+                    <div class="card-value">
+                        <a href="mailto:info@khotels.ug" class="card-link">info@khotels.ug</a>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">📍</div>
+                    <div class="card-label">Address</div>
+                    <div class="card-value">K Hotels, Entebbe<br>Uganda</div>
+                </div>
+
+                <div class="info-card">
+                    <div class="card-icon">🕐</div>
+                    <div class="card-label">Hours</div>
+                    <div class="card-value">24/7 Available</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Contact Form -->
+        <section class="form-section">
+            <h2 class="form-title">Send us a Message</h2>
+            <form onsubmit="submitForm(event)">
+                <div class="form-grid">
+                    <div class="form-field">
+                        <label class="label">Name</label>
+                        <input type="text" class="input" placeholder="Your name" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="label">Email</label>
+                        <input type="email" class="input" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-field">
+                        <label class="label">Phone</label>
+                        <input type="tel" class="input" placeholder="+256 777 824 000">
+                    </div>
+
+                    <div class="form-field">
+                        <label class="label">Subject</label>
+                        <select class="select" required>
+                            <option value="">Select subject</option>
+                            <option value="reservation">Room Reservation</option>
+                            <option value="events">Events</option>
+                            <option value="general">General Inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-field full-width">
+                        <label class="label">Message</label>
+                        <textarea class="textarea" placeholder="Your message..." required></textarea>
+                    </div>
+                </div>
+
+                <div class="btn-wrapper">
+                    <button type="submit" class="btn">Send Message</button>
+                </div>
+            </form>
+        </section>
+
+        <!-- Section 3: Map -->
+        <section class="map-section">
+            <!-- <div class="map-header">
+                <h2 class="map-title">Our Location</h2>
+                <p class="map-subtitle">Visit us in Entebbe, Uganda</p>
+            </div> -->
+            <div class="map-container">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7569424857796!2d32.47794!3d0.06420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDInNTEuMSJOIDMywr4yOCczOC42IkU!5e0!3m2!1sen!2sug!4v1234567890"
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </section>
+    </div>
+
+
+
+        <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <img src="Images/Logo.png" alt="" class="logo-footer">
+                <p>Experience luxury, comfort, and hospitality redefined. K Hotels offers elegant spaces, world-class
+                    amenities, and exceptional service to make every stay memorable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Rooms.html">Rooms</a></li>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="mice.html">M.I.C.E</a></li>
+                    <li><a href="Amenities.html">Amenities</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa fa-map-marker"></i>Plot 32 Hill Rd, Entebbe, Uganda</li>
+                    <li><i class="fa fa-phone"></i>T +256 777 846 000</li>
+                    <li><i class="fa fa-envelope"></i>Info@khotels.ug</li>
+                    <li><i class="fa fa-envelope"></i>fo.ebb@khotels.ug</li>
+
+                </ul>
+                <div class="footer-social-modern">
+                    <a href="https://www.facebook.com/khotelsug" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/khotelsug/" class="ig"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/khotelsug" class="tw"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@khotelsug" class="yt"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/khotelsug/" class="li"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 K HOTELS. All Rights Reserved. </p>
+        </div>
+    </footer>
+      <script src="script.js"></script>
+
+</body>
+
+</html>

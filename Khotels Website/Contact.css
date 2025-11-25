@@ -1,0 +1,612 @@
+/* ====== GLOBAL ====== */
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+/* ====== NAVBAR ====== */
+.navbar {
+    background-color: #1f1f1f;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+/* ====== LOGO ====== */
+.logo img {
+    height: 45px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ====== NAV LINKS ====== */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s;
+}
+
+.nav-links a i {
+    color: #d4a53f;
+}
+
+.nav-links a:hover {
+    color: #d4a53f;
+}
+
+/* ====== BOOK BUTTON ====== */
+.book-btn {
+    background: #2a4e1b;
+    color: white;
+    padding: 8px 18px;
+    border: 1px solid #d4a53f;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.book-btn:hover {
+    background: #3e6e27;
+}
+
+/* ====== MENU ICON (MOBILE) ====== */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #1f1f1f;
+        width: 100%;
+        padding: 20px 0px 20px 0px;
+        border-top: 1px solid #333;
+    }
+
+    .nav-links.active {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .book-btn {
+        margin-top: 10px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+}
+
+
+
+
+.about-section {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('Images/All images/test7.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-overlay h2 {
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .about-section {
+        height: 120px;
+    }
+
+    .about-overlay h2 {
+        font-size: 14px;
+    }
+
+    .experience-section {
+        padding: 20px !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+.page-header {
+    background: white;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.page-title {
+    font-size: 42px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.page-subtitle {
+    font-size: 18px;
+    color: #666;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+/* Section 1: Get in Touch */
+.touch-section {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #d4a53f;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.info-card {
+    background: #fffbfb24;
+    border: 1px solid #c0943546;
+    padding: 30px 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+}
+
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.card-label {
+    font-size: 16px;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.card-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: #d4a53f;
+}
+
+.card-link {
+    color: #d4a53f;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* Section 2: Contact Form */
+.form-section {
+    background: #fffbfb24;
+    border: 1px solid #c0943546;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+    margin-bottom: 50px;
+}
+
+.form-title {
+    font-size: 27px;
+    font-weight: 700;
+    color: #d4a53f;
+    margin-bottom: 30px;
+    text-align: center;
+        font-family: 'Playfair Display', serif;
+
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.form-field {
+    margin-bottom: 0;
+}
+
+.form-field.full-width {
+    grid-column: 1 / -1;
+}
+
+.label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.input,
+.textarea,
+.select {
+    width: 92%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: border 0.3s ease;
+}
+
+.input:focus,
+.textarea:focus,
+.select:focus {
+    outline: none;
+    border-color: #d4a53f;
+}
+
+.textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+/* .select{
+    width: 440px !important;
+} */
+.btn-wrapper {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.btn {
+    padding: 14px 50px;
+    background: #d4a53f;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #c09535;
+}
+
+/* Section 3: Map */
+.map-section {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+}
+
+.map-header {
+    padding: 30px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+}
+
+.map-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 8px;
+}
+
+.map-subtitle {
+    font-size: 16px;
+    color: #666;
+}
+
+.map-container {
+    height: 450px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Responsive */
+@media (max-width: 968px) {
+    .info-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        padding: 40px 30px;
+    }
+
+    .page-title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 640px) {
+    .page-header {
+        padding: 40px 20px;
+    }
+
+    .page-title {
+        font-size: 32px;
+    }
+
+    .container {
+        padding: 40px 15px;
+    }
+
+    .section-title,
+    .form-title,
+    .map-title {
+        font-size: 26px;
+    }
+
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+        padding: 30px 20px;
+    }
+
+    .map-container {
+        height: 350px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+.site-footer {
+    background: #111;
+    color: #ddd;
+    padding: 70px 5% 30px;
+    font-family: "Poppins", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* --- Footer Columns --- */
+.footer-col {
+    flex: 1 1 280px;
+}
+
+.footer-about h2.footer-logo {
+    color: #c3932d;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.footer-about p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+/* --- Links --- */
+.footer-col h3 {
+    color: #c3932d;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #c3932d;
+}
+
+/* --- Contact Info --- */
+.footer-contact li {
+    margin-bottom: 10px;
+}
+
+.footer-contact i {
+    color: #c3932d;
+    margin-right: 8px;
+}
+
+/* --- Social Icons --- */
+.footer-social {
+    margin-top: 20px;
+}
+
+.footer-social a {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    border-radius: 50%;
+    background: #222;
+    color: #c3932d;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.footer-social a:hover {
+    background: #c3932d;
+    color: #fff;
+}
+
+/* --- Footer Bottom --- */
+.footer-bottom {
+    border-top: 1px solid #333;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #aaa;
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-social a {
+        margin: 5px;
+    }
+
+    .footer-col h3 {
+        margin-top: 25px;
+    }
+}
+
+.footer-social-modern {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.footer-social-modern a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 10px;
+    background: #222;
+    color: #fff;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    /* ✅ removes underline if any */
+
+}
+
+/* Hover colors */
+.footer-social-modern a.fb:hover {
+    background: #1877f2;
+    box-shadow: 0 0 10px #1877f2;
+}
+
+.footer-social-modern a.ig:hover {
+    background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+    box-shadow: 0 0 10px #dd2a7b;
+}
+
+.footer-social-modern a.tw:hover {
+    background: #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.footer-social-modern a.yt:hover {
+    background: #ff0000;
+    box-shadow: 0 0 10px #ff0000;
+}
+
+.footer-social-modern a.li:hover {
+    background: #0077b5;
+    box-shadow: 0 0 10px #0077b5;
+}
+
+.logo-footer {
+    width: 180px;
+}
+
+p {
+    font-family: 'Open Sans', serif !important;
+    font-size: 16px !important;
+}

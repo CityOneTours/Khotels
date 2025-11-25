@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Restaurant.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Replace logo.png with your actual logo path -->
+            <a href="index.html"><img src="Images/Logo.png" alt="KHOTELS Logo"></a>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+        <div class="nav-links" id="nav-links">
+            <a href="Rooms.html"><i class="fas fa-bed"></i> Rooms</a>
+            <a href="Restaurant.html"><i class="fas fa-utensils"></i> Restaurant</a>
+            <a href="mice.html"><i class="fas fa-bell-concierge"></i> M.I.C.E</a>
+            <a href="Amenities.html"><i class="fas fa-spa"></i> Amenities</a>
+            <a href="About.html"><i class="fas fa-user"></i> About</a>
+            <a href="Contact.html"><i class="fas fa-address-book"></i> Contact</a>
+            <a href="https://bookings.resavenue.com/resBooking/availsearch?regCode=ZZVC0424&targetTemplate=3"
+                class="book-btn">BOOK NOW</a>
+        </div>
+    </nav>
+    <section class="about-section">
+        <div class="about-overlay">
+            <h2>Restaurant</h2>
+        </div>
+    </section>
+
+
+
+
+    <div class="category-buttons">
+        <button class="category-btn active" onclick="filterMenu('all')">All Items</button>
+        <button class="category-btn" onclick="filterMenu('starters')">Starters</button>
+        <button class="category-btn" onclick="filterMenu('maincourse')">Main Course</button>
+        <button class="category-btn" onclick="filterMenu('fastfood')">fastfood</button>
+
+        <button class="category-btn" onclick="filterMenu('desserts')">Desserts</button>
+        <button class="category-btn" onclick="filterMenu('beverages')">Beverages</button>
+
+    </div>
+
+    <div class="container">
+        <div class="menu-grid" id="menuGrid"></div>
+    </div>
+
+    <div class="modal" id="enquiryModal">
+        <div class="modal-content">
+            <button class="close-btn" onclick="closeModal()">&times;</button>
+            <h2>Enquiry Form</h2>
+            <div id="successMessage" class="success-message hidden">
+                Thank you for your enquiry! We will contact you soon.
+            </div>
+            <form id="enquiryForm">
+                <div class="form-group">
+                    <label for="name">Your Name *</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="mobile">Mobile Number *</label>
+                    <input type="tel" id="mobile" pattern="[0-9]{10}" required>
+                </div>
+                <div class="form-group">
+                    <label for="roomNo">Hotel Room Number *</label>
+                    <input type="text" id="roomNo" placeholder="e.g., 101" required>
+                </div>
+                <div class="form-group">
+                    <label for="requirements">Special Requirements</label>
+                    <textarea id="requirements"
+                        placeholder="Any dietary restrictions or special requests..."></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Submit Enquiry</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-col footer-about">
+                <img src="Images/Logo.png" alt="" class="logo-footer">
+                <p>Experience luxury, comfort, and hospitality redefined. K Hotels offers elegant spaces, world-class
+                    amenities, and exceptional service to make every stay memorable.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Rooms.html">Rooms</a></li>
+                    <li><a href="Restaurant.html">Restaurant</a></li>
+                    <li><a href="mice.html">M.I.C.E</a></li>
+                    <li><a href="Amenities.html">Amenities</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Contact Info</h3>
+                <ul class="footer-contact">
+                    <li><i class="fa fa-map-marker"></i>Plot 32 Hill Rd, Entebbe, Uganda</li>
+                    <li><i class="fa fa-phone"></i>T +256 777 846 000</li>
+                    <li><i class="fa fa-envelope"></i>Info@khotels.ug</li>
+                    <li><i class="fa fa-envelope"></i>fo.ebb@khotels.ug</li>
+
+                </ul>
+                <div class="footer-social-modern">
+                    <a href="https://www.facebook.com/khotelsug" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/khotelsug/" class="ig"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/khotelsug" class="tw"><i class="fab fa-x-twitter"></i></a>
+                    <a href="https://www.youtube.com/@khotelsug" class="yt"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.linkedin.com/company/khotelsug/" class="li"><i
+                            class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 K HOTELS. All Rights Reserved. </p>
+        </div>
+    </footer>
+    <script src="Restaurant.js"></script>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
