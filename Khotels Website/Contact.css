@@ -20,7 +20,7 @@ body {
 
 /* ====== LOGO ====== */
 .logo img {
-    height: 45px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
@@ -40,6 +40,8 @@ body {
     align-items: center;
     gap: 8px;
     transition: 0.3s;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 
 .nav-links a i {
@@ -101,7 +103,7 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 50px;
     }
 
 }
@@ -265,7 +267,7 @@ body {
     color: #d4a53f;
     margin-bottom: 30px;
     text-align: center;
-        font-family: 'Playfair Display', serif;
+    font-family: 'Playfair Display', serif;
 
 }
 
@@ -316,6 +318,7 @@ body {
     resize: vertical;
     min-height: 100px;
 }
+
 /* .select{
     width: 440px !important;
 } */
@@ -467,6 +470,8 @@ body {
 .footer-about p {
     color: #bbb;
     line-height: 1.6;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 /* --- Links --- */
@@ -474,6 +479,8 @@ body {
     color: #c3932d;
     margin-bottom: 20px;
     font-weight: 600;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .footer-col ul {
@@ -489,6 +496,9 @@ body {
     color: #ddd;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+
 }
 
 .footer-col ul li a:hover {

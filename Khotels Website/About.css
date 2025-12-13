@@ -21,7 +21,7 @@ body {
 
 /* ====== LOGO ====== */
 .logo img {
-    height: 45px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
@@ -41,6 +41,8 @@ body {
     align-items: center;
     gap: 8px;
     transition: 0.3s;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 
 .nav-links a i {
@@ -102,7 +104,7 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 50px;
     }
 }
 
@@ -112,44 +114,46 @@ body {
 
 
 .about-section {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  background: url('Images/All images/test7.webp') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('Images/All images/test7.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-overlay h2 {
-  color: #fff;
-  font-size: 27px;
-  letter-spacing: 2px;
-  margin: 0;
-      font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
 
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .about-section {
-    height: 120px;
-  }
-  .about-overlay h2 {
-    font-size: 14px;
-  }
-  .experience-section{
-    padding: 20px !important;
-  }
+    .about-section {
+        height: 120px;
+    }
+
+    .about-overlay h2 {
+        font-size: 14px;
+    }
+
+    .experience-section {
+        padding: 20px !important;
+    }
 }
 
 
@@ -194,6 +198,8 @@ p {
     margin-bottom: 18px;
     font-size: 18px;
     opacity: 0.9;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 /* ===== Carousel Styling ===== */
@@ -284,6 +290,8 @@ p {
 .hotel-info-box p {
     margin-bottom: 30px;
     opacity: 0.9;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 /* ===== Responsive ===== */
@@ -319,16 +327,20 @@ p {
 }
 
 .value-card {
-    background: rgba(43, 42, 42, 0.7); /* semi-transparent */
-    backdrop-filter: blur(10px); /* adds blur */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background: rgba(43, 42, 42, 0.7);
+    /* semi-transparent */
+    backdrop-filter: blur(10px);
+    /* adds blur */
+    -webkit-backdrop-filter: blur(10px);
+    /* Safari support */
     padding: 50px 40px;
     border-radius: 20px;
     position: relative;
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
-    border: 1px solid rgba(255, 255, 255, 0.1); /* optional: glass border */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    /* optional: glass border */
 }
 
 
@@ -364,12 +376,16 @@ p {
     font-size: 1.8rem;
     margin-bottom: 15px;
     color: #e0b070;
+    font-family: 'Playfair Display', serif;
+margin-top: 0px;
 }
 
 .value-card p {
     font-size: 1rem;
     line-height: 1.8;
     color: #bbb;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 .amenities-section {
@@ -406,6 +422,8 @@ p {
     font-size: 1.3rem;
     color: #e0b070;
     margin-bottom: 10px;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .cta-section {
@@ -419,6 +437,8 @@ p {
     font-size: clamp(2rem, 4vw, 3rem);
     color: #0a0a0a;
     margin-bottom: 20px;
+        font-family: 'Playfair Display', serif;
+
 }
 
 .cta-section p {
@@ -568,6 +588,8 @@ p {
     color: #c3932d;
     margin-bottom: 20px;
     font-weight: 600;
+        font-family: 'Playfair Display', serif;
+
 }
 
 .footer-col ul {
@@ -583,6 +605,8 @@ p {
     color: #ddd;
     text-decoration: none;
     transition: 0.3s;
+                    font-family: 'Montserrat', sans-serif !important;
+font-weight: 400;
 }
 
 .footer-col ul li a:hover {
@@ -701,6 +725,120 @@ p {
 }
 
 p {
-    font-family: 'Open Sans', serif !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
     font-size: 16px !important;
+}
+
+.ourcore {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerr {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.core-values-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.core-value-item {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 4px solid #e0b070;
+    padding: 25px 30px;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    opacity: 0;
+    transform: translateX(-30px);
+    animation: slideIn 0.6s ease forwards;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
+}
+
+.core-value-item:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #e0b070;
+    transform: translateX(10px);
+    box-shadow: 0 8px 20px rgba(255, 187, 0, 0.2);
+}
+
+.core-value-item:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.core-value-item:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.core-value-item:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.core-value-item:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.core-value-item:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeInDown {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    from {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .core-value-item {
+        padding: 20px 20px;
+        font-size: 1rem;
+    }
+}
+
+
+.value-icon svg {
+    width: 40px;
+    height: 40px;
+    stroke-width: 1.8;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+.value-icon{
+    background-color: #e0b070;
+    border-radius: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15%;
+
 }

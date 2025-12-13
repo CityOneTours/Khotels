@@ -20,7 +20,7 @@ body {
 
 /* ====== LOGO ====== */
 .logo img {
-    height: 45px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
@@ -40,6 +40,8 @@ body {
     align-items: center;
     gap: 8px;
     transition: 0.3s;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 
 .nav-links a i {
@@ -101,7 +103,7 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 50px;
     }
 
 }
@@ -110,45 +112,47 @@ body {
 
 
 .about-section {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  background: url('Images/All images/ecd0394df262070040a68f413839537a75a67ecc1f1ecdd0cf151053405b79f5.webp') center/cover no-repeat;
-  display: flex;
-  align-items: center;
-  object-fit: scale-down;
-  justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background: url('Images/All images/ecd0394df262070040a68f413839537a75a67ecc1f1ecdd0cf151053405b79f5.webp') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    object-fit: scale-down;
+    justify-content: center;
 }
 
 .about-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-overlay h2 {
-  color: #fff;
-  font-size: 27px;
-  letter-spacing: 2px;
-  margin: 0;
-      font-family: 'Playfair Display', serif;
+    color: #fff;
+    font-size: 27px;
+    letter-spacing: 2px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
 
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .about-section {
-    height: 120px;
-  }
-  .about-overlay h2 {
-    font-size: 14px;
-  }
-  .experience-section{
-    padding: 20px !important;
-  }
+    .about-section {
+        height: 120px;
+    }
+
+    .about-overlay h2 {
+        font-size: 14px;
+    }
+
+    .experience-section {
+        padding: 20px !important;
+    }
 }
 
 
@@ -156,102 +160,107 @@ body {
 
 
 .amenities-section {
-  background: #121212;
-  padding: 80px 20px;
-  color: #fff;
-  font-family: 'Poppins', sans-serif;
+    background: #121212;
+    padding: 80px 20px;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
-  max-width: 1300px;
-  margin: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 .amenity-card {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(212, 165, 63, 0.3);
-  border-radius: 20px;
-  padding: 40px;
-  backdrop-filter: blur(10px);
-  transition: all 0.4s ease;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(212, 165, 63, 0.3);
+    border-radius: 20px;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    transition: all 0.4s ease;
 }
 
 .amenity-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(212, 165, 63, 0.2);
-  border-color: #d4a53f;
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(212, 165, 63, 0.2);
+    border-color: #d4a53f;
 }
 
 .amenity-card.reverse {
-  flex-direction: row-reverse;
+    flex-direction: row-reverse;
 }
 
 .amenity-image img {
-  width: 100%;
-  max-width: 520px;
-  height: 350px;
-  border-radius: 16px;
-  object-fit: cover;
-  box-shadow: 0 0 20px rgba(212, 165, 63, 0.15);
+    width: 100%;
+    max-width: 520px;
+    height: 350px;
+    border-radius: 16px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(212, 165, 63, 0.15);
 }
 
 .amenity-content {
-  flex: 1;
+    flex: 1;
 }
 
 .amenity-content h2 {
-  font-size: 2rem;
-  color: #d4a53f;
-  margin-bottom: 20px;
-  font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    color: #d4a53f;
+    margin-bottom: 20px;
+    font-family: 'Playfair Display', serif;
 }
 
 .amenity-content p {
-  font-size: 1rem;
-  color: #ddd;
-  line-height: 1.7;
-  margin-bottom: 25px;
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 .btn-gold {
-  background: linear-gradient(135deg, #d4a53f, #b8902f);
-  color: #000;
-  padding: 12px 28px;
-  border: none;
-  border-radius: 25px;
-  font-weight: 600;
-  cursor: pointer;
-  text-transform: uppercase;
-  transition: 0.3s;
+    background: linear-gradient(135deg, #d4a53f, #b8902f);
+    color: #000;
+    padding: 12px 28px;
+    border: none;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
 }
 
 .btn-gold:hover {
-  box-shadow: 0 0 20px rgba(212, 165, 63, 0.5);
-  transform: translateY(-3px);
+    box-shadow: 0 0 20px rgba(212, 165, 63, 0.5);
+    transform: translateY(-3px);
 }
 
 /* ============ RESPONSIVE DESIGN ============ */
 @media (max-width: 992px) {
-  .amenity-card,
-  .amenity-card.reverse {
-    flex-direction: column;
-    text-align: center;
-  }
 
-  .amenity-image img {
-    height: 280px;
-    max-width: 100%;
-  }
+    .amenity-card,
+    .amenity-card.reverse {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px;
+    }
 
-  .amenity-content {
-    padding-top: 20px;
-  }
+    .amenity-image img {
+        height: 280px;
+        max-width: 100%;
+        object-fit: fill;
+    }
+
+    .amenity-content {
+        padding-top: 20px;
+    }
 }
 
 
@@ -287,6 +296,9 @@ body {
 .footer-about p {
     color: #bbb;
     line-height: 1.6;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+
 }
 
 /* --- Links --- */
@@ -294,6 +306,8 @@ body {
     color: #c3932d;
     margin-bottom: 20px;
     font-weight: 600;
+    font-family: 'Playfair Display', serif;
+
 }
 
 .footer-col ul {
@@ -309,6 +323,9 @@ body {
     color: #ddd;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
+
 }
 
 .footer-col ul li a:hover {

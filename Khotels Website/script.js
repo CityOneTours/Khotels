@@ -88,3 +88,15 @@ btnRight.addEventListener('click', () => {
 btnLeft.addEventListener('click', () => {
   track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
 });
+
+
+document.querySelectorAll('.location-slider').forEach(slider => {
+    let currentIndex = 0;
+    const slides = slider.querySelectorAll('.location-slide');
+
+    setInterval(() => {
+        slides[currentIndex].classList.remove('active-slide');
+        currentIndex = (currentIndex + 1) % slides.length;
+        slides[currentIndex].classList.add('active-slide');
+    }, 3000);
+});

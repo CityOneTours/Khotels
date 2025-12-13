@@ -20,7 +20,7 @@ body {
 
 /* ====== LOGO ====== */
 .logo img {
-    height: 45px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
@@ -40,6 +40,8 @@ body {
     align-items: center;
     gap: 8px;
     transition: 0.3s;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 
 .nav-links a i {
@@ -101,7 +103,7 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 50px;
     }
 
 }
@@ -245,8 +247,8 @@ body {
     line-height: 1.8;
     color: #cccccc;
     margin-bottom: 35px;
-    font-family: 'Open Sans', sans-serif;
-
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 .features-grid {
@@ -288,6 +290,8 @@ body {
 .feature-text {
     font-size: 1em;
     font-weight: 500;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 
 .contact-info {
@@ -296,16 +300,20 @@ body {
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
-.diev{
+
+.diev {
     display: flex !important;
     gap: 20px;
 }
+
 .contact-item {
     display: flex;
     align-items: center;
     gap: 12px;
     color: #d2d2d2;
     font-size: 1.05em;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 .contact-icon {
@@ -503,7 +511,8 @@ body {
         font-size: 0.9rem;
     }
 
-    .feature-item, .contact-item {
+    .feature-item,
+    .contact-item {
         gap: 10px;
     }
 
@@ -558,6 +567,7 @@ body {
         margin-right: 6px;
     }
 }
+
 @media (max-width: 768px) {
     .conference-section .content-wrapper {
         display: flex;
@@ -603,6 +613,9 @@ body {
 .footer-about p {
     color: #bbb;
     line-height: 1.6;
+            font-family: 'Montserrat', sans-serif !important;
+font-weight: 400;
+
 }
 
 /* --- Links --- */
@@ -610,6 +623,9 @@ body {
     color: #c3932d;
     margin-bottom: 20px;
     font-weight: 600;
+            font-family: 'Montserrat', sans-serif !important;
+font-weight: 400;
+
 }
 
 .footer-col ul {

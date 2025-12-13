@@ -20,7 +20,7 @@ body {
 
 /* ====== LOGO ====== */
 .logo img {
-    height: 45px;
+    height: 70px;
     width: auto;
     object-fit: contain;
 }
@@ -40,6 +40,8 @@ body {
     align-items: center;
     gap: 8px;
     transition: 0.3s;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500;
 }
 
 .nav-links a i {
@@ -101,7 +103,7 @@ body {
     }
 
     .logo img {
-        height: 40px;
+        height: 50px;
     }
 
 }
@@ -230,6 +232,8 @@ span{
     line-height: 1.8;
     color: #d3d3d3;
     margin-bottom: 10px;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400; /* Regular */
 }
 
 .room-specs {
@@ -264,6 +268,8 @@ span{
     font-size: 15px;
     font-weight: 600;
     color: #d1d1d1;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400; /* Regular */
 }
 
 .amenities {
@@ -716,6 +722,8 @@ span{
 .footer-about p {
     color: #bbb;
     line-height: 1.6;
+        font-family: 'Montserrat', sans-serif !important;
+    font-weight: 400;
 }
 
 /* --- Links --- */
@@ -723,6 +731,8 @@ span{
     color: #c3932d;
     margin-bottom: 20px;
     font-weight: 600;
+        font-family: 'Playfair Display', serif !important;
+
 }
 
 .footer-col ul {
@@ -738,6 +748,8 @@ span{
     color: #ddd;
     text-decoration: none;
     transition: 0.3s;
+        font-family: 'Montserrat', sans-serif !important;
+font-weight: 400;
 }
 
 .footer-col ul li a:hover {
