@@ -1772,4 +1772,9 @@ p {
 .location-slide.active-slide {
     display: block;
 }
- 
+
+.lastcard{
+    display: flex;
+    justify-content:center ;
+    
+}

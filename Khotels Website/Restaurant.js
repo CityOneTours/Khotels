@@ -7,15 +7,15 @@ const menuItems = [
     image: "food images/ARANCHINI 1.webp"
 },
 {
-    name: "Assorted",
+    name: "Assorted Kabab",
     description: "A platter of assorted vegetable kebabs grilled to perfection.",
     price: "₹380",
     category: "starters",
     image: "food images/ASSORTED VEG KABAB PLATER 1.webp"
 },
 {
-    name: "Avocado",
-    description: "Fresh avocado salad tossed with light herbs and seasoning.",
+    name: "Avocado  And Broccolt Salad",
+    description: "Fresh avocado And Broccolt salad tossed with light herbs and seasoning.",
     price: "₹420",
     category: "starters",
     image: "food images/AVOCADO BROCCOLI SALAD 1.webp"
@@ -37,7 +37,7 @@ const menuItems = [
 },
 
 {
-    name: "Chicken Dragon",
+    name: "Chicken Dragon Roll",
     description: "Spicy Indo-Chinese chicken tossed with flavorful sauces.",
     price: "₹320",
     category: "starters",
@@ -69,8 +69,8 @@ const menuItems = [
 },
 
 {
-    name: "Fish In Hot",
-    description: "Fish cooked in spicy hot garlic-style gravy.",
+    name: "Fish Fillet In Hot Garlic Sauce",
+    description: "Fish fillet cooked in a spicy hot garlic-style gravy.",
     price: "₹320",
     category: "starters",
     image: "food images/FISH IN HOT GARLIC SAUCE 3.webp"
@@ -90,7 +90,7 @@ const menuItems = [
     image: "food images/HOT & SOUR SOUP.webp"
 },
 {
-    name: "Hurb Crusted Fish",
+    name: "Herb Crusted Fish",
     description: "Herb-crusted fish pan-seared to crispy perfection.",
     price: "₹320",
     category: "starters",
@@ -183,8 +183,8 @@ const menuItems = [
     image: "food images/SHAKSHUKA  1.webp"
 },
 {
-    name: "Steak Tender",
-    description: "Tender steak cooked to perfection with seasoning.",
+    name: "Steak Tenderloin",
+    description: "Tender steak Tenderloin cooked to perfection with seasoning.",
     price: "₹950",
     category: "maincourse",
     image: "food images/STEAK TENDER LOIN.webp"
@@ -326,7 +326,7 @@ const menuItems = [
     image: "food images/FRESH FRUIT PLATER 2.webp"
 },
 {
-    name: "Mango malva",
+    name: "Mango malva Pudding",
     description: "Soft mango malva pudding with rich tropical flavor.",
     price: "₹180",
     category: "desserts",
@@ -379,7 +379,7 @@ const menuItems = [
     image: "food images/K SOUR 1.webp"
 },
 {
-    name: "Kpunch",
+    name: "Cocktail Juice",
     description: "A tropical punch with fruity flavors.",
     price: "₹220",
     category: "beverages",
@@ -393,7 +393,7 @@ const menuItems = [
     image: "food images/MINT GREEN TEA.webp"
 },
 {
-    name: "Mix Berry Smoothi",
+    name: "Mix Berry Smoothie",
     description: "A mixed berry smoothie rich in antioxidants.",
     price: "₹220",
     category: "beverages",
@@ -406,13 +406,13 @@ const menuItems = [
     category: "beverages",
     image: "food images/MOJITO 3.webp"
 },
-{
-    name: "Pina Blue Lagoon",
-    description: "A pineapple–blue lagoon blend mocktail.",
-    price: "₹220",
-    category: "beverages",
-    image: "food images/PINA BLUE LAGOON 1.webp"
-},
+// {
+//     name: "Pina Blue Lagoon",
+//     description: "A pineapple–blue lagoon blend mocktail.",
+//     price: "₹220",
+//     category: "beverages",
+//     image: "food images/PINA BLUE LAGOON 1.webp"
+// },
 {
     name: "Pina Colada",
     description: "A creamy tropical pina colada.",
@@ -458,7 +458,7 @@ const menuItems = [
     image: "food images/MAC N CHEESE 2.webp"
 },
 {
-    name: "Spenish Peprika Pizza",
+    name: "Spanish Paprika Pizza",
     description: "Spanish paprika pizza with bold spicy flavors.",
     price: "₹220",
     category: "fastfood",
