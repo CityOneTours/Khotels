@@ -10,7 +10,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap" rel="stylesheet">
 
 </head>
 
@@ -57,7 +57,7 @@
                     <div class="card-value">
                         <a href="tel:+256777824000" class="card-link">+256 777 824 000</a>
                     </div>
-                                        <div class="card-value">
+                    <div class="card-value">
                         <a href="tel:+256777824000" class="card-link">+256 707 100 001</a>
                     </div>
                 </div>
@@ -87,43 +87,49 @@
         <!-- Section 2: Contact Form -->
         <section class="form-section">
             <h2 class="form-title">Send us a Message</h2>
-            <form onsubmit="submitForm(event)">
+            <form action="https://api.web3forms.com/submit" method="POST">
+
+                <!-- REQUIRED -->
+                <input type="hidden" name="access_key" value="368ac364-c578-4400-8edc-9318d36dbb23">
+
                 <div class="form-grid">
                     <div class="form-field">
                         <label class="label">Name</label>
-                        <input type="text" class="input" placeholder="Your name" required>
+                        <input type="text" name="name" class="input" placeholder="Your name" required>
                     </div>
 
                     <div class="form-field">
                         <label class="label">Email</label>
-                        <input type="email" class="input" placeholder="your@email.com" required>
+                        <input type="email" name="email" class="input" placeholder="your@email.com" required>
                     </div>
 
                     <div class="form-field">
                         <label class="label">Phone</label>
-                        <input type="tel" class="input" placeholder="+256 777 824 000">
+                        <input type="tel" name="phone" class="input" placeholder="+256 777 824 000">
                     </div>
 
                     <div class="form-field">
                         <label class="label">Subject</label>
-                        <select class="select" required>
+                        <select name="subject" class="select" required>
                             <option value="">Select subject</option>
-                            <option value="reservation">Room Reservation</option>
-                            <option value="events">Events</option>
-                            <option value="general">General Inquiry</option>
+                            <option value="Room Reservation">Room Reservation</option>
+                            <option value="Events">Events</option>
+                            <option value="General Inquiry">General Inquiry</option>
                         </select>
                     </div>
 
                     <div class="form-field full-width">
                         <label class="label">Message</label>
-                        <textarea class="textarea" placeholder="Your message..." required></textarea>
+                        <textarea name="message" class="textarea" placeholder="Your message..." required></textarea>
                     </div>
                 </div>
 
                 <div class="btn-wrapper">
                     <button type="submit" class="btn">Send Message</button>
                 </div>
+
             </form>
+
         </section>
 
         <!-- Section 3: Map -->
@@ -133,10 +139,9 @@
                 <p class="map-subtitle">Visit us in Entebbe, Uganda</p>
             </div> -->
             <div class="map-container">
-                <iframe 
+                <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7569424857796!2d32.47794!3d0.06420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMMKwMDInNTEuMSJOIDMywr4yOCczOC42IkU!5e0!3m2!1sen!2sug!4v1234567890"
-                    allowfullscreen="" 
-                    loading="lazy">
+                    allowfullscreen="" loading="lazy">
                 </iframe>
             </div>
         </section>
@@ -144,7 +149,7 @@
 
 
 
-        <footer class="site-footer">
+    <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-col footer-about">
                 <img src="Images/All images/Khotel Logo.webp" alt="" class="logo-footer">
@@ -168,7 +173,7 @@
                 <ul class="footer-contact">
                     <li><i class="fa fa-map-marker"></i>Plot 32 Hill Rd, Entebbe, Uganda</li>
                     <li><i class="fa fa-phone"></i>T +256 777 846 000</li>
-                                        <li><i class="fa fa-phone"></i>+256 707 100 001</li>
+                    <li><i class="fa fa-phone"></i>+256 707 100 001</li>
 
                     <li><i class="fa fa-envelope"></i>Info@khotels.ug</li>
                     <li><i class="fa fa-envelope"></i>fo.ebb@khotels.ug</li>
@@ -189,7 +194,7 @@
             <p>© 2025 K HOTELS. All Rights Reserved. </p>
         </div>
     </footer>
-      <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 
