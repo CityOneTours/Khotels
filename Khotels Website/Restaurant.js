@@ -486,7 +486,6 @@ function renderMenu(category) {
                             <div class="item-description">${item.description}</div>
                             <div class="item-footer">
                                 
-                                <button class="enquire-btn" onclick="openModal()">Enquire</button>
                             </div>
                         </div>
                     </div>
