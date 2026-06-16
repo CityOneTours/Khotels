@@ -100,3 +100,13 @@ document.querySelectorAll('.location-slider').forEach(slider => {
         slides[currentIndex].classList.add('active-slide');
     }, 3000);
 });
+
+ window.addEventListener("load", function () {
+    setTimeout(function () {
+      document.getElementById("khOfferPopup").classList.add("show");
+    }, 1200);
+  });
+
+  function closeKhPopup() {
+    document.getElementById("khOfferPopup").classList.remove("show");
+  }
