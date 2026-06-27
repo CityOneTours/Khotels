@@ -1938,3 +1938,221 @@ p {
     box-sizing: border-box;
   }
 }
+.kh-coupon{
+    display:inline-block;
+    margin-top:8px;
+    padding:6px 14px;
+    background:#c49a42;
+    color:#fff;
+    border-radius:6px;
+    font-weight:700;
+    letter-spacing:1px;
+    font-size:15px;
+}
+/* 3-card grid for popup */
+.kh-benefits {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+/* Discount card visual banner */
+.kh-discount-card .kh-discount-visual {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(135deg, #2a4e1b, #3e6e27);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #d4a53f;
+}
+
+.kh-discount-percent {
+  font-size: 62px;
+  font-weight: 800;
+  color: #d4a53f;
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+}
+
+.kh-discount-label {
+  font-size: 22px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 4px;
+}
+
+/* Mobile: stack to 1 column */
+@media (max-width: 768px) {
+  .kh-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .kh-discount-card .kh-discount-visual {
+    height: 130px;
+  }
+
+  .kh-discount-percent {
+    font-size: 48px;
+  }
+}/* ===== Discount Card ===== */
+.kh-discount-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.kh-discount-visual {
+  width: 100%;
+  height: 180px;
+  background: linear-gradient(145deg, #1e4d10, #2a6b18, #3a8a22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-bottom: 2px solid #d4a53f;
+}
+
+.kh-discount-visual::before {
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  top: -30px;
+  right: -20px;
+}
+
+.kh-discount-visual::after {
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.05);
+  bottom: -10px;
+  left: -10px;
+}
+
+.kh-discount-percent {
+  font-size: 72px;
+  font-weight: 900;
+  color: #d4a53f;
+  line-height: 1;
+  font-family: 'Playfair Display', serif;
+  text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.kh-discount-label {
+  font-size: 20px;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 6px;
+  margin-top: 4px;
+}
+
+.kh-discount-sub {
+  font-size: 12px;
+  color: rgba(255,255,255,0.7);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 6px;
+}
+
+/* ===== Discount Body ===== */
+.kh-discount-body {
+  padding: 18px;
+  flex: 1;
+}
+
+.kh-discount-body h3 {
+  color: #d4a53f;
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.kh-discount-body p {
+  color: #eee;
+  font-size: 14px !important;
+  line-height: 1.6;
+  margin: 0 0 14px;
+}
+
+/* ===== Coupon Strip ===== */
+.kh-coupon-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.kh-coupon-strip {
+  display: flex;
+  align-items: center;
+  background: #1a1a1a;
+  border: 2px dashed #d4a53f;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 46px;
+}
+
+.kh-coupon-code {
+  flex: 1;
+  text-align: center;
+  color: #d4a53f;
+  font-weight: 800;
+  font-size: 17px;
+  letter-spacing: 3px;
+  font-family: 'Montserrat', sans-serif;
+  padding-left: 12px;
+}
+
+.kh-copy-btn {
+  background: #d4a53f;
+  color: #111;
+  border: none;
+  padding: 0 18px;
+  height: 100%;
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  transition: 0.3s;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.kh-copy-btn:hover {
+  background: #c49a2e;
+}
+
+.kh-copy-msg {
+  display: none;
+  color: #4caf50;
+  font-size: 13px !important;
+  font-weight: 600;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .kh-discount-visual {
+    height: 140px;
+  }
+  .kh-discount-percent {
+    font-size: 54px;
+  }
+  .kh-discount-label {
+    font-size: 16px;
+  }
+}

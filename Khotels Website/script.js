@@ -110,3 +110,14 @@ document.querySelectorAll('.location-slider').forEach(slider => {
   function closeKhPopup() {
     document.getElementById("khOfferPopup").classList.remove("show");
   }
+
+  function copyKhCoupon() {
+  const code = document.getElementById('couponCode').innerText;
+  navigator.clipboard.writeText(code).then(function () {
+    const msg = document.getElementById('khCopyMsg');
+    msg.style.display = 'inline';
+    setTimeout(function () {
+      msg.style.display = 'none';
+    }, 2000);
+  });
+}
