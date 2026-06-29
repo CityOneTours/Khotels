@@ -1960,7 +1960,7 @@ p {
 /* Discount card visual banner */
 .kh-discount-card .kh-discount-visual {
   width: 100%;
-  height: 180px;
+  height: 140px;
   background: linear-gradient(135deg, #2a4e1b, #3e6e27);
   display: flex;
   flex-direction: column;
